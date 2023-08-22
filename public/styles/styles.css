@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.addproduct-container{
+    margin-top: 120px;
+}
+
+.name,
+.price,
+.description{
+    color: black;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px whitesmoke;
+    padding: 5px;
+}
+
+.productsList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 162px;
+}
+
+.productsList>*{
+    margin-bottom: 40px;
+}
+
+/* product card styling */
+.productItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.productItem{
+    border-radius: 5%;
+    background-color: #eaecec;
+    box-shadow: rgba(149, 157, 165, 0.599) 0px 8px 24px;
+}
+
+.productItem-img-container{
+ width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.productItem-img-container>img{
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom: 3px solid black;
+}
+.productItem-info-wrapper{
+    padding: 5px;
+}
+
+.productItem-info:nth-child(1):nth-child(2){
+    font-weight: 300;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.productsList button{
+    font-size: large;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(56, 54, 54);
+    background-color: white;
+    margin:7px 6px;
+}
+
+.productItem-action :nth-child(1):hover{
+    background-color: rgb(31, 103, 0);
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid black;
+}
+.productItem-action :nth-child(2):hover{
+    background-color: rgba(182, 188, 6, 0.877);
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid black;
+}
+
+
+.productItem-action :nth-child(1):active{
+    background-color: rgb(111, 92, 220);
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid black;
+}
+.productItem-action :nth-child(2):active{
+    background-color: rgb(111, 92, 220);
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid black;
+}
+
+/* add to cart side view */
+
+.navbar{
+    position: relative;
+}
+
+
+.sideView{
+    position: fixed;
+    top: 81px;
+    right: -3px;
+    background-color: whitesmoke;
+    width: 400px;
+    z-index: 4;
+    height: 75dvh;
+    border: 1px solid black;
+    overflow: scroll;
+    transition: width 0.09s ease-in-out;
+}
+
+.cart-container-wrapper{
+    margin: 10px;
+}
+
+.sideView{
+    box-sizing:content-box;
+}
+
+.showCart{
+    width: 400px;
+}

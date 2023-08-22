@@ -1,0 +1,23 @@
+<div class="sideView">
+    <div class="cart-container-wrapper">
+        {{#each this.cartdetail as |detail| }}
+        <div class="cart-container">
+            <div class="cart-product-image">
+                <img src="{{detail.id.imageUrl}}" alt="">
+            </div>
+            <div class="cart-product-info">
+                <div class="cart-product-name">
+                    <p>Name:-{{detail.id.name}}</p>
+                    <p>Description:-{{detail.id.description}}</p>
+                </div>
+                <div>
+                    <p>Price:-${{detail.id.price}}</p>
+                    <p>Quantity:-{{detail.quantity}}</p>
+                </div>
+            </div>
+        </div><br>
+        {{/each}}
+    </div>
+</div>
+
+<link rel="stylesheet" href="/styles/cart.css">
